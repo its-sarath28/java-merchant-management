@@ -30,7 +30,7 @@ public class MerchantService {
 
     public SuccessResponse createMerchant(MerchantRequest merchant) throws Exception {
         Category category = categoryRepository.findByNameIgnoreCaseAndIgnoreSpaces(merchant.getCategory_name())
-                .orElseThrow(() -> new NotFoundException("category_nmae", "Category not found"));
+                .orElseThrow(() -> new NotFoundException("category_name", "Category not found"));
 
         Merchant newMerchant = new Merchant();
 
