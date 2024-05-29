@@ -34,7 +34,8 @@ public class MerchantService {
 
         Merchant newMerchant = new Merchant();
 
-        newMerchant.setMerchant_name(merchant.getMerchant_name());
+        newMerchant.setShop_name(merchant.getShop_name());
+        newMerchant.setOwner_name(merchant.getOwner_name());
         newMerchant.setRegistration_number(generateRegistrationNumber());
         newMerchant.setContact(merchant.getContact());
         newMerchant.setCreated_at(LocalDateTime.now());

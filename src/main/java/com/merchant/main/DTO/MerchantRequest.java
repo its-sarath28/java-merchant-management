@@ -8,9 +8,14 @@ import lombok.Setter;
 @Getter
 @Setter
 public class MerchantRequest {
+
     @NotNull
     @NotBlank(message = "Merchant name is required")
-    private String merchant_name;
+    private String shop_name;
+
+    @NotNull
+    @NotBlank(message = "Owner name is required")
+    private String owner_name;
 
     private String registration_number;
 

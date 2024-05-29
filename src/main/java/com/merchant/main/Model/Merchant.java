@@ -29,11 +29,15 @@ public class Merchant {
     private Long id;
 
     @NotNull
-    @Column(name = "merchant_name")
-    private String merchant_name;
+    @Column(name = "shop_name")
+    private String shop_name;
 
     @Column(name = "registration_number", unique = true)
     private String registration_number;
+
+    @NotNull
+    @Column(name = "owner_name")
+    private String owner_name;
 
     @NotNull
     @Column(name = "contact")
